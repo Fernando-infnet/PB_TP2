@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="30" passed="29" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-29T03:56:32 BRT" name="AutomacaoTestesSelelenium" finished-at="2026-01-29T03:57:50 BRT" duration-ms="78236">
+    <groups>
+    </groups>
+    <test started-at="2026-01-29T03:56:32 BRT" name="ListarTest" finished-at="2026-01-29T03:56:49 BRT" duration-ms="16743">
+      <class name="com.example.test.ListarTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:32 BRT" name="setup" finished-at="2026-01-29T03:56:33 BRT" duration-ms="1170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCadastrarNovoNavegacao()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:33 BRT" name="testCadastrarNovoNavegacao" description="Verify that clicking &#039;Cadastrar Novo&#039; button navigates to form page" finished-at="2026-01-29T03:56:35 BRT" duration-ms="1562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCadastrarNovoNavegacao -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:35 BRT" name="teardown" finished-at="2026-01-29T03:56:35 BRT" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:35 BRT" name="setup" finished-at="2026-01-29T03:56:35 BRT" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDadosProdutoExibidos()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:35 BRT" name="testDadosProdutoExibidos" description="Verify that product name is displayed correctly in the list" finished-at="2026-01-29T03:56:35 BRT" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDadosProdutoExibidos -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:35 BRT" name="teardown" finished-at="2026-01-29T03:56:36 BRT" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:36 BRT" name="setup" finished-at="2026-01-29T03:56:36 BRT" duration-ms="679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testListaProdutosNaoVazia()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:36 BRT" name="testListaProdutosNaoVazia" description="Verify that at least one product is displayed in the list" finished-at="2026-01-29T03:56:36 BRT" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListaProdutosNaoVazia -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:36 BRT" name="teardown" finished-at="2026-01-29T03:56:36 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:36 BRT" name="setup" finished-at="2026-01-29T03:56:37 BRT" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testMensagemSucessoNaoVisivel()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:37 BRT" name="testMensagemSucessoNaoVisivel" description="Verify that success message is not displayed initially" finished-at="2026-01-29T03:56:47 BRT" duration-ms="10048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMensagemSucessoNaoVisivel -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:47 BRT" name="teardown" finished-at="2026-01-29T03:56:47 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:47 BRT" name="setup" finished-at="2026-01-29T03:56:48 BRT" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPrecoProdutoExibido()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:48 BRT" name="testPrecoProdutoExibido" description="Verify that product price is displayed with currency format" finished-at="2026-01-29T03:56:48 BRT" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrecoProdutoExibido -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:48 BRT" name="teardown" finished-at="2026-01-29T03:56:48 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:48 BRT" name="setup" finished-at="2026-01-29T03:56:49 BRT" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testTabelaProdutosVisivel()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:49 BRT" name="testTabelaProdutosVisivel" description="Verify that the products table is visible when page loads" finished-at="2026-01-29T03:56:49 BRT" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTabelaProdutosVisivel -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ListarTest@1afd44cb]" started-at="2026-01-29T03:56:49 BRT" name="teardown" finished-at="2026-01-29T03:56:49 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.example.test.ListarTest -->
+    </test> <!-- ListarTest -->
+    <test started-at="2026-01-29T03:56:49 BRT" name="CadastroTest" finished-at="2026-01-29T03:57:10 BRT" duration-ms="20740">
+      <class name="com.example.test.CadastroTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:56:49 BRT" name="setup" finished-at="2026-01-29T03:56:50 BRT" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCamposFormularioVisiveis()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:56:50 BRT" name="testCamposFormularioVisiveis" description="Verify that form fields are visible on registration page" finished-at="2026-01-29T03:56:50 BRT" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCamposFormularioVisiveis -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:56:50 BRT" name="teardown" finished-at="2026-01-29T03:56:50 BRT" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:56:50 BRT" name="setup" finished-at="2026-01-29T03:56:51 BRT" duration-ms="955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testNavegacaoCadastro()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:56:51 BRT" name="testNavegacaoCadastro" description="Verify navigation to product registration page" finished-at="2026-01-29T03:56:51 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavegacaoCadastro -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:56:51 BRT" name="teardown" finished-at="2026-01-29T03:56:51 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:56:51 BRT" name="setup" finished-at="2026-01-29T03:56:52 BRT" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistroComPrecoNegativo()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:56:52 BRT" name="testRegistroComPrecoNegativo" description="Test registration with negative price (negative test)" finished-at="2026-01-29T03:57:03 BRT" duration-ms="11125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistroComPrecoNegativo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:03 BRT" name="teardown" finished-at="2026-01-29T03:57:03 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:03 BRT" name="setup" finished-at="2026-01-29T03:57:03 BRT" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistroProdutoParametrizado(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:03 BRT" name="testRegistroProdutoParametrizado" description="Parametrized test for product registration with various data" data-provider="dadosRegistroProduto" finished-at="2026-01-29T03:57:04 BRT" duration-ms="367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Produto Válido 1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.50]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistroProdutoParametrizado -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:04 BRT" name="teardown" finished-at="2026-01-29T03:57:04 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:04 BRT" name="setup" finished-at="2026-01-29T03:57:04 BRT" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistroProdutoParametrizado(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:04 BRT" name="testRegistroProdutoParametrizado" description="Parametrized test for product registration with various data" data-provider="dadosRegistroProduto" finished-at="2026-01-29T03:57:05 BRT" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Produto Válido 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[99.99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistroProdutoParametrizado -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:05 BRT" name="teardown" finished-at="2026-01-29T03:57:05 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:05 BRT" name="setup" finished-at="2026-01-29T03:57:05 BRT" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistroProdutoParametrizado(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:05 BRT" name="testRegistroProdutoParametrizado" description="Parametrized test for product registration with various data" data-provider="dadosRegistroProduto" finished-at="2026-01-29T03:57:06 BRT" duration-ms="233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Monitores]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1200.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistroProdutoParametrizado -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:06 BRT" name="teardown" finished-at="2026-01-29T03:57:06 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:06 BRT" name="setup" finished-at="2026-01-29T03:57:06 BRT" duration-ms="556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistroProdutoParametrizado(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:06 BRT" name="testRegistroProdutoParametrizado" description="Parametrized test for product registration with various data" data-provider="dadosRegistroProduto" finished-at="2026-01-29T03:57:06 BRT" duration-ms="162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.50]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistroProdutoParametrizado -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:06 BRT" name="teardown" finished-at="2026-01-29T03:57:06 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:06 BRT" name="setup" finished-at="2026-01-29T03:57:07 BRT" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistroProdutoParametrizado(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:07 BRT" name="testRegistroProdutoParametrizado" description="Parametrized test for product registration with various data" data-provider="dadosRegistroProduto" finished-at="2026-01-29T03:57:07 BRT" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Produto Inválido]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-5.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistroProdutoParametrizado -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:07 BRT" name="teardown" finished-at="2026-01-29T03:57:07 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:07 BRT" name="setup" finished-at="2026-01-29T03:57:08 BRT" duration-ms="616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistroProdutoParametrizado(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:08 BRT" name="testRegistroProdutoParametrizado" description="Parametrized test for product registration with various data" data-provider="dadosRegistroProduto" finished-at="2026-01-29T03:57:08 BRT" duration-ms="162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Produto Inválido]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistroProdutoParametrizado -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:08 BRT" name="teardown" finished-at="2026-01-29T03:57:08 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:08 BRT" name="setup" finished-at="2026-01-29T03:57:09 BRT" duration-ms="602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistroProdutoSucesso()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:09 BRT" name="testRegistroProdutoSucesso" description="Test successful product registration with valid data" finished-at="2026-01-29T03:57:09 BRT" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistroProdutoSucesso -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:09 BRT" name="teardown" finished-at="2026-01-29T03:57:09 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:09 BRT" name="setup" finished-at="2026-01-29T03:57:09 BRT" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistroSemNome()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:09 BRT" name="testRegistroSemNome" description="Test registration with empty product name (negative test)" finished-at="2026-01-29T03:57:10 BRT" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistroSemNome -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.CadastroTest@a1153bc]" started-at="2026-01-29T03:57:10 BRT" name="teardown" finished-at="2026-01-29T03:57:10 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.example.test.CadastroTest -->
+    </test> <!-- CadastroTest -->
+    <test started-at="2026-01-29T03:57:10 BRT" name="EditarTest" finished-at="2026-01-29T03:57:25 BRT" duration-ms="15519">
+      <class name="com.example.test.EditarTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:10 BRT" name="setup" finished-at="2026-01-29T03:57:10 BRT" duration-ms="650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAtualizacaoComPrecoNegativo()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:10 BRT" name="testAtualizacaoComPrecoNegativo" description="Test update with negative price (negative test)" finished-at="2026-01-29T03:57:21 BRT" duration-ms="10232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAtualizacaoComPrecoNegativo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:21 BRT" name="teardown" finished-at="2026-01-29T03:57:21 BRT" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:21 BRT" name="setup" finished-at="2026-01-29T03:57:21 BRT" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAtualizacaoProdutoSucesso()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:21 BRT" name="testAtualizacaoProdutoSucesso" description="Test successful product update with modified data" finished-at="2026-01-29T03:57:22 BRT" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAtualizacaoProdutoSucesso -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:22 BRT" name="teardown" finished-at="2026-01-29T03:57:22 BRT" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:22 BRT" name="setup" finished-at="2026-01-29T03:57:23 BRT" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAtualizacaoSemNome()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:23 BRT" name="testAtualizacaoSemNome" description="Test update with empty product name (negative test)" finished-at="2026-01-29T03:57:23 BRT" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAtualizacaoSemNome -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:23 BRT" name="teardown" finished-at="2026-01-29T03:57:23 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:23 BRT" name="setup" finished-at="2026-01-29T03:57:23 BRT" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCancelarEdicao()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:23 BRT" name="testCancelarEdicao" description="Test cancel button returns to list without saving changes" finished-at="2026-01-29T03:57:23 BRT" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelarEdicao -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:23 BRT" name="teardown" finished-at="2026-01-29T03:57:23 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:23 BRT" name="setup" finished-at="2026-01-29T03:57:24 BRT" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testEdicaoProdutoNaoExistente()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:24 BRT" name="testEdicaoProdutoNaoExistente" description="Test accessing edit page for non-existent product" finished-at="2026-01-29T03:57:24 BRT" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdicaoProdutoNaoExistente -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:24 BRT" name="teardown" finished-at="2026-01-29T03:57:24 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:24 BRT" name="setup" finished-at="2026-01-29T03:57:25 BRT" duration-ms="609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFormularioPreaPreenchido()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:25 BRT" name="testFormularioPreaPreenchido" description="Verify that edit form is pre-populated with product data" finished-at="2026-01-29T03:57:25 BRT" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormularioPreaPreenchido -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:25 BRT" name="teardown" finished-at="2026-01-29T03:57:25 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:25 BRT" name="setup" finished-at="2026-01-29T03:57:25 BRT" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testNavegacaoEdicao()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:25 BRT" name="testNavegacaoEdicao" description="Verify navigation to product edit page" finished-at="2026-01-29T03:57:25 BRT" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavegacaoEdicao -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.EditarTest@14cd1699]" started-at="2026-01-29T03:57:25 BRT" name="teardown" finished-at="2026-01-29T03:57:25 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.example.test.EditarTest -->
+    </test> <!-- EditarTest -->
+    <test started-at="2026-01-29T03:57:26 BRT" name="ExcluirTest" finished-at="2026-01-29T03:57:50 BRT" duration-ms="24685">
+      <class name="com.example.test.ExcluirTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:26 BRT" name="setup" finished-at="2026-01-29T03:57:26 BRT" duration-ms="579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBotaoExcluirVisivel()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:26 BRT" name="testBotaoExcluirVisivel" description="Verify that delete button is visible for each product" finished-at="2026-01-29T03:57:26 BRT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBotaoExcluirVisivel -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:26 BRT" name="teardown" finished-at="2026-01-29T03:57:26 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:26 BRT" name="setup" finished-at="2026-01-29T03:57:27 BRT" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCancelarExclusao()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:27 BRT" name="testCancelarExclusao" description="Test canceling deletion through confirmation dialog" finished-at="2026-01-29T03:57:27 BRT" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelarExclusao -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:27 BRT" name="teardown" finished-at="2026-01-29T03:57:27 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:27 BRT" name="setup" finished-at="2026-01-29T03:57:28 BRT" duration-ms="574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDialogoConfirmacaoExclusao()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:28 BRT" name="testDialogoConfirmacaoExclusao" description="Test that delete confirmation dialog appears" finished-at="2026-01-29T03:57:28 BRT" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDialogoConfirmacaoExclusao -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:28 BRT" name="teardown" finished-at="2026-01-29T03:57:28 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:28 BRT" name="setup" finished-at="2026-01-29T03:57:28 BRT" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testExclusaoMultiplosProdutos()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:28 BRT" name="testExclusaoMultiplosProdutos" description="Test sequential deletion of multiple products" finished-at="2026-01-29T03:57:39 BRT" duration-ms="10164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExclusaoMultiplosProdutos -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:39 BRT" name="teardown" finished-at="2026-01-29T03:57:39 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:39 BRT" name="setup" finished-at="2026-01-29T03:57:39 BRT" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testExclusaoProdutoNaoExistente()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:39 BRT" name="testExclusaoProdutoNaoExistente" description="Test deleting non-existent product" finished-at="2026-01-29T03:57:39 BRT" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExclusaoProdutoNaoExistente -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:39 BRT" name="teardown" finished-at="2026-01-29T03:57:39 BRT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:39 BRT" name="setup" finished-at="2026-01-29T03:57:40 BRT" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testExclusaoProdutoSucesso()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:40 BRT" name="testExclusaoProdutoSucesso" description="Test successful product deletion" finished-at="2026-01-29T03:57:50 BRT" duration-ms="10203" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btnExcluir\-1"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.12.63-1-lts', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9a983db7ee30f919f485ae71e73ff1dc, findElement {using=id, value=btnExcluir-1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39979}, goog:processID: 242387, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39979/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a983db7ee30f919f485ae71e73ff1dc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btnExcluir\-1"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.12.63-1-lts', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9a983db7ee30f919f485ae71e73ff1dc, findElement {using=id, value=btnExcluir-1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39979}, goog:processID: 242387, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39979/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a983db7ee30f919f485ae71e73ff1dc
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.example.test.pages.ListarPage.clicarExcluir(ListarPage.java:70)
+at com.example.test.ExcluirTest.testExclusaoProdutoSucesso(ExcluirTest.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.TestNG.privateMain(TestNG.java:1461)
+at org.testng.TestNG.main(TestNG.java:1425)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExclusaoProdutoSucesso -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.test.ExcluirTest@1bb5a082]" started-at="2026-01-29T03:57:50 BRT" name="teardown" finished-at="2026-01-29T03:57:50 BRT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.example.test.ExcluirTest -->
+    </test> <!-- ExcluirTest -->
+  </suite> <!-- AutomacaoTestesSelelenium -->
+</testng-results>

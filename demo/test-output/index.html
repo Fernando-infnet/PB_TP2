@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AutomacaoTestesSelelenium" class="navigator-link">
+              <span class="suite-name border-failed">AutomacaoTestesSelelenium</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AutomacaoTestesSelelenium" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AutomacaoTestesSelelenium" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AutomacaoTestesSelelenium" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AutomacaoTestesSelelenium" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AutomacaoTestesSelelenium" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AutomacaoTestesSelelenium" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AutomacaoTestesSelelenium" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">30 methods, 1 failed,   29 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AutomacaoTestesSelelenium" class="hide-methods failed suite-AutomacaoTestesSelelenium"> (hide)</a> <!-- hide-methods failed suite-AutomacaoTestesSelelenium -->
+                      <a href="#" panel-name="suite-AutomacaoTestesSelelenium" class="show-methods failed suite-AutomacaoTestesSelelenium"> (show)</a> <!-- show-methods failed suite-AutomacaoTestesSelelenium -->
+                    </span>
+                    <div class="method-list-content failed suite-AutomacaoTestesSelelenium">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ExcluirTest" class="method navigator-link" hash-for-method="testExclusaoProdutoSucesso">testExclusaoProdutoSucesso</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AutomacaoTestesSelelenium -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AutomacaoTestesSelelenium" class="hide-methods passed suite-AutomacaoTestesSelelenium"> (hide)</a> <!-- hide-methods passed suite-AutomacaoTestesSelelenium -->
+                      <a href="#" panel-name="suite-AutomacaoTestesSelelenium" class="show-methods passed suite-AutomacaoTestesSelelenium"> (show)</a> <!-- show-methods passed suite-AutomacaoTestesSelelenium -->
+                    </span>
+                    <div class="method-list-content passed suite-AutomacaoTestesSelelenium">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.EditarTest" class="method navigator-link" hash-for-method="testAtualizacaoComPrecoNegativo">testAtualizacaoComPrecoNegativo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.EditarTest" class="method navigator-link" hash-for-method="testAtualizacaoProdutoSucesso">testAtualizacaoProdutoSucesso</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.EditarTest" class="method navigator-link" hash-for-method="testAtualizacaoSemNome">testAtualizacaoSemNome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ExcluirTest" class="method navigator-link" hash-for-method="testBotaoExcluirVisivel">testBotaoExcluirVisivel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ListarTest" class="method navigator-link" hash-for-method="testCadastrarNovoNavegacao">testCadastrarNovoNavegacao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testCamposFormularioVisiveis">testCamposFormularioVisiveis</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.EditarTest" class="method navigator-link" hash-for-method="testCancelarEdicao">testCancelarEdicao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ExcluirTest" class="method navigator-link" hash-for-method="testCancelarExclusao">testCancelarExclusao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ListarTest" class="method navigator-link" hash-for-method="testDadosProdutoExibidos">testDadosProdutoExibidos</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ExcluirTest" class="method navigator-link" hash-for-method="testDialogoConfirmacaoExclusao">testDialogoConfirmacaoExclusao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.EditarTest" class="method navigator-link" hash-for-method="testEdicaoProdutoNaoExistente">testEdicaoProdutoNaoExistente</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ExcluirTest" class="method navigator-link" hash-for-method="testExclusaoMultiplosProdutos">testExclusaoMultiplosProdutos</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ExcluirTest" class="method navigator-link" hash-for-method="testExclusaoProdutoNaoExistente">testExclusaoProdutoNaoExistente</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.EditarTest" class="method navigator-link" hash-for-method="testFormularioPreaPreenchido">testFormularioPreaPreenchido</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ListarTest" class="method navigator-link" hash-for-method="testListaProdutosNaoVazia">testListaProdutosNaoVazia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ListarTest" class="method navigator-link" hash-for-method="testMensagemSucessoNaoVisivel">testMensagemSucessoNaoVisivel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testNavegacaoCadastro">testNavegacaoCadastro</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.EditarTest" class="method navigator-link" hash-for-method="testNavegacaoEdicao">testNavegacaoEdicao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ListarTest" class="method navigator-link" hash-for-method="testPrecoProdutoExibido">testPrecoProdutoExibido</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testRegistroComPrecoNegativo">testRegistroComPrecoNegativo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testRegistroProdutoParametrizado(Monitores, 1200.00, true)">testRegistroProdutoParametrizado(Monitores, 1200.00, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testRegistroProdutoParametrizado(Produto Válido 2, 99.99, true)">testRegistroProdutoParametrizado(Produto Válido 2, 99.99, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testRegistroProdutoParametrizado(, 10.50, false)">testRegistroProdutoParametrizado(, 10.50, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testRegistroProdutoParametrizado(Produto Válido 1, 10.50, true)">testRegistroProdutoParametrizado(Produto Válido 1, 10.50, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testRegistroProdutoParametrizado(Produto Inválido, -5.00, false)">testRegistroProdutoParametrizado(Produto Inválido, -5.00, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testRegistroProdutoParametrizado(Produto Inválido, abc, false)">testRegistroProdutoParametrizado(Produto Inválido, abc, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testRegistroProdutoSucesso">testRegistroProdutoSucesso</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.CadastroTest" class="method navigator-link" hash-for-method="testRegistroSemNome">testRegistroSemNome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomacaoTestesSelelenium" title="com.example.test.ListarTest" class="method navigator-link" hash-for-method="testTabelaProdutosVisivel">testTabelaProdutosVisivel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AutomacaoTestesSelelenium -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AutomacaoTestesSelelenium" class="panel AutomacaoTestesSelelenium">
+          <div class="suite-AutomacaoTestesSelelenium-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.test.ExcluirTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testExclusaoProdutoSucesso">
+                  </a> <!-- testExclusaoProdutoSucesso -->
+                  <span class="method-name">testExclusaoProdutoSucesso</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnExcluir\-1&quot;}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.12.63-1-lts&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9a983db7ee30f919f485ae71e73ff1dc, findElement {using=id, value=btnExcluir-1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39979}, goog:processID: 242387, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39979/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a983db7ee30f919f485ae71e73ff1dc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.example.test.pages.ListarPage.clicarExcluir(ListarPage.java:70)
+	at com.example.test.ExcluirTest.testExclusaoProdutoSucesso(ExcluirTest.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.TestNG.privateMain(TestNG.java:1461)
+	at org.testng.TestNG.main(TestNG.java:1425)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Test successful product deletion)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomacaoTestesSelelenium-class-failed -->
+          <div class="suite-AutomacaoTestesSelelenium-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.test.EditarTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAtualizacaoComPrecoNegativo">
+                  </a> <!-- testAtualizacaoComPrecoNegativo -->
+                  <span class="method-name">testAtualizacaoComPrecoNegativo</span>
+                  <em>
+(Test update with negative price (negative test))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAtualizacaoProdutoSucesso">
+                  </a> <!-- testAtualizacaoProdutoSucesso -->
+                  <span class="method-name">testAtualizacaoProdutoSucesso</span>
+                  <em>
+(Test successful product update with modified data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAtualizacaoSemNome">
+                  </a> <!-- testAtualizacaoSemNome -->
+                  <span class="method-name">testAtualizacaoSemNome</span>
+                  <em>
+(Test update with empty product name (negative test))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCancelarEdicao">
+                  </a> <!-- testCancelarEdicao -->
+                  <span class="method-name">testCancelarEdicao</span>
+                  <em>
+(Test cancel button returns to list without saving changes)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEdicaoProdutoNaoExistente">
+                  </a> <!-- testEdicaoProdutoNaoExistente -->
+                  <span class="method-name">testEdicaoProdutoNaoExistente</span>
+                  <em>
+(Test accessing edit page for non-existent product)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFormularioPreaPreenchido">
+                  </a> <!-- testFormularioPreaPreenchido -->
+                  <span class="method-name">testFormularioPreaPreenchido</span>
+                  <em>
+(Verify that edit form is pre-populated with product data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavegacaoEdicao">
+                  </a> <!-- testNavegacaoEdicao -->
+                  <span class="method-name">testNavegacaoEdicao</span>
+                  <em>
+(Verify navigation to product edit page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomacaoTestesSelelenium-class-passed -->
+          <div class="suite-AutomacaoTestesSelelenium-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.test.ListarTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCadastrarNovoNavegacao">
+                  </a> <!-- testCadastrarNovoNavegacao -->
+                  <span class="method-name">testCadastrarNovoNavegacao</span>
+                  <em>
+(Verify that clicking 'Cadastrar Novo' button navigates to form page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDadosProdutoExibidos">
+                  </a> <!-- testDadosProdutoExibidos -->
+                  <span class="method-name">testDadosProdutoExibidos</span>
+                  <em>
+(Verify that product name is displayed correctly in the list)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testListaProdutosNaoVazia">
+                  </a> <!-- testListaProdutosNaoVazia -->
+                  <span class="method-name">testListaProdutosNaoVazia</span>
+                  <em>
+(Verify that at least one product is displayed in the list)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMensagemSucessoNaoVisivel">
+                  </a> <!-- testMensagemSucessoNaoVisivel -->
+                  <span class="method-name">testMensagemSucessoNaoVisivel</span>
+                  <em>
+(Verify that success message is not displayed initially)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPrecoProdutoExibido">
+                  </a> <!-- testPrecoProdutoExibido -->
+                  <span class="method-name">testPrecoProdutoExibido</span>
+                  <em>
+(Verify that product price is displayed with currency format)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTabelaProdutosVisivel">
+                  </a> <!-- testTabelaProdutosVisivel -->
+                  <span class="method-name">testTabelaProdutosVisivel</span>
+                  <em>
+(Verify that the products table is visible when page loads)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomacaoTestesSelelenium-class-passed -->
+          <div class="suite-AutomacaoTestesSelelenium-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.test.CadastroTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCamposFormularioVisiveis">
+                  </a> <!-- testCamposFormularioVisiveis -->
+                  <span class="method-name">testCamposFormularioVisiveis</span>
+                  <em>
+(Verify that form fields are visible on registration page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavegacaoCadastro">
+                  </a> <!-- testNavegacaoCadastro -->
+                  <span class="method-name">testNavegacaoCadastro</span>
+                  <em>
+(Verify navigation to product registration page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistroComPrecoNegativo">
+                  </a> <!-- testRegistroComPrecoNegativo -->
+                  <span class="method-name">testRegistroComPrecoNegativo</span>
+                  <em>
+(Test registration with negative price (negative test))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistroProdutoParametrizado(Monitores, 1200.00, true)">
+                  </a> <!-- testRegistroProdutoParametrizado(Monitores, 1200.00, true) -->
+                  <span class="method-name">testRegistroProdutoParametrizado</span>
+                  <span class="parameters">(Monitores,1200.00,true)</span>
+                  <em>
+(Parametrized test for product registration with various data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistroProdutoParametrizado(Produto Válido 2, 99.99, true)">
+                  </a> <!-- testRegistroProdutoParametrizado(Produto Válido 2, 99.99, true) -->
+                  <span class="method-name">testRegistroProdutoParametrizado</span>
+                  <span class="parameters">(Produto Válido 2,99.99,true)</span>
+                  <em>
+(Parametrized test for product registration with various data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistroProdutoParametrizado(, 10.50, false)">
+                  </a> <!-- testRegistroProdutoParametrizado(, 10.50, false) -->
+                  <span class="method-name">testRegistroProdutoParametrizado</span>
+                  <span class="parameters">(,10.50,false)</span>
+                  <em>
+(Parametrized test for product registration with various data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistroProdutoParametrizado(Produto Válido 1, 10.50, true)">
+                  </a> <!-- testRegistroProdutoParametrizado(Produto Válido 1, 10.50, true) -->
+                  <span class="method-name">testRegistroProdutoParametrizado</span>
+                  <span class="parameters">(Produto Válido 1,10.50,true)</span>
+                  <em>
+(Parametrized test for product registration with various data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistroProdutoParametrizado(Produto Inválido, -5.00, false)">
+                  </a> <!-- testRegistroProdutoParametrizado(Produto Inválido, -5.00, false) -->
+                  <span class="method-name">testRegistroProdutoParametrizado</span>
+                  <span class="parameters">(Produto Inválido,-5.00,false)</span>
+                  <em>
+(Parametrized test for product registration with various data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistroProdutoParametrizado(Produto Inválido, abc, false)">
+                  </a> <!-- testRegistroProdutoParametrizado(Produto Inválido, abc, false) -->
+                  <span class="method-name">testRegistroProdutoParametrizado</span>
+                  <span class="parameters">(Produto Inválido,abc,false)</span>
+                  <em>
+(Parametrized test for product registration with various data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistroProdutoSucesso">
+                  </a> <!-- testRegistroProdutoSucesso -->
+                  <span class="method-name">testRegistroProdutoSucesso</span>
+                  <em>
+(Test successful product registration with valid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistroSemNome">
+                  </a> <!-- testRegistroSemNome -->
+                  <span class="method-name">testRegistroSemNome</span>
+                  <em>
+(Test registration with empty product name (negative test))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomacaoTestesSelelenium-class-passed -->
+          <div class="suite-AutomacaoTestesSelelenium-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.test.ExcluirTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBotaoExcluirVisivel">
+                  </a> <!-- testBotaoExcluirVisivel -->
+                  <span class="method-name">testBotaoExcluirVisivel</span>
+                  <em>
+(Verify that delete button is visible for each product)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCancelarExclusao">
+                  </a> <!-- testCancelarExclusao -->
+                  <span class="method-name">testCancelarExclusao</span>
+                  <em>
+(Test canceling deletion through confirmation dialog)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDialogoConfirmacaoExclusao">
+                  </a> <!-- testDialogoConfirmacaoExclusao -->
+                  <span class="method-name">testDialogoConfirmacaoExclusao</span>
+                  <em>
+(Test that delete confirmation dialog appears)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testExclusaoMultiplosProdutos">
+                  </a> <!-- testExclusaoMultiplosProdutos -->
+                  <span class="method-name">testExclusaoMultiplosProdutos</span>
+                  <em>
+(Test sequential deletion of multiple products)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testExclusaoProdutoNaoExistente">
+                  </a> <!-- testExclusaoProdutoNaoExistente -->
+                  <span class="method-name">testExclusaoProdutoNaoExistente</span>
+                  <em>
+(Test deleting non-existent product)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomacaoTestesSelelenium-class-passed -->
+        </div> <!-- panel AutomacaoTestesSelelenium -->
+        <div panel-name="test-xml-AutomacaoTestesSelelenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/intra/Documents/Trabalhos/Engenharia de Testes de Software/PB/demo/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AutomacaoTestesSelelenium&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;2&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ListarTest&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.test.ListarTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ListarTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CadastroTest&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.test.CadastroTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CadastroTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;EditarTest&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.test.EditarTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- EditarTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ExcluirTest&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.test.ExcluirTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ExcluirTest --&gt;
+&lt;/suite&gt; &lt;!-- AutomacaoTestesSelelenium --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AutomacaoTestesSelelenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AutomacaoTestesSelelenium</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ListarTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CadastroTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">EditarTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ExcluirTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AutomacaoTestesSelelenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AutomacaoTestesSelelenium</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AutomacaoTestesSelelenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AutomacaoTestesSelelenium</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AutomacaoTestesSelelenium');
+function tableData_AutomacaoTestesSelelenium() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(30);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testRegistroComPrecoNegativo')
+data.setCell(0, 2, 'com.example.test.CadastroTest')
+data.setCell(0, 3, 11125);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAtualizacaoComPrecoNegativo')
+data.setCell(1, 2, 'com.example.test.EditarTest')
+data.setCell(1, 3, 10232);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testExclusaoProdutoSucesso')
+data.setCell(2, 2, 'com.example.test.ExcluirTest')
+data.setCell(2, 3, 10203);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testExclusaoMultiplosProdutos')
+data.setCell(3, 2, 'com.example.test.ExcluirTest')
+data.setCell(3, 3, 10164);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testMensagemSucessoNaoVisivel')
+data.setCell(4, 2, 'com.example.test.ListarTest')
+data.setCell(4, 3, 10048);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testCadastrarNovoNavegacao')
+data.setCell(5, 2, 'com.example.test.ListarTest')
+data.setCell(5, 3, 1562);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testAtualizacaoProdutoSucesso')
+data.setCell(6, 2, 'com.example.test.EditarTest')
+data.setCell(6, 3, 552);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testRegistroProdutoParametrizado')
+data.setCell(7, 2, 'com.example.test.CadastroTest')
+data.setCell(7, 3, 367);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testRegistroProdutoParametrizado')
+data.setCell(8, 2, 'com.example.test.CadastroTest')
+data.setCell(8, 3, 233);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testCancelarExclusao')
+data.setCell(9, 2, 'com.example.test.ExcluirTest')
+data.setCell(9, 3, 224);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testRegistroProdutoSucesso')
+data.setCell(10, 2, 'com.example.test.CadastroTest')
+data.setCell(10, 3, 209);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testAtualizacaoSemNome')
+data.setCell(11, 2, 'com.example.test.EditarTest')
+data.setCell(11, 3, 202);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testRegistroProdutoParametrizado')
+data.setCell(12, 2, 'com.example.test.CadastroTest')
+data.setCell(12, 3, 191);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testListaProdutosNaoVazia')
+data.setCell(13, 2, 'com.example.test.ListarTest')
+data.setCell(13, 3, 183);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testRegistroProdutoParametrizado')
+data.setCell(14, 2, 'com.example.test.CadastroTest')
+data.setCell(14, 3, 179);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testRegistroSemNome')
+data.setCell(15, 2, 'com.example.test.CadastroTest')
+data.setCell(15, 3, 163);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testRegistroProdutoParametrizado')
+data.setCell(16, 2, 'com.example.test.CadastroTest')
+data.setCell(16, 3, 162);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testRegistroProdutoParametrizado')
+data.setCell(17, 2, 'com.example.test.CadastroTest')
+data.setCell(17, 3, 162);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testCamposFormularioVisiveis')
+data.setCell(18, 2, 'com.example.test.CadastroTest')
+data.setCell(18, 3, 100);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testCancelarEdicao')
+data.setCell(19, 2, 'com.example.test.EditarTest')
+data.setCell(19, 3, 85);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testNavegacaoCadastro')
+data.setCell(20, 2, 'com.example.test.CadastroTest')
+data.setCell(20, 3, 64);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testNavegacaoEdicao')
+data.setCell(21, 2, 'com.example.test.EditarTest')
+data.setCell(21, 3, 60);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testDialogoConfirmacaoExclusao')
+data.setCell(22, 2, 'com.example.test.ExcluirTest')
+data.setCell(22, 3, 59);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testFormularioPreaPreenchido')
+data.setCell(23, 2, 'com.example.test.EditarTest')
+data.setCell(23, 3, 54);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testEdicaoProdutoNaoExistente')
+data.setCell(24, 2, 'com.example.test.EditarTest')
+data.setCell(24, 3, 38);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testExclusaoProdutoNaoExistente')
+data.setCell(25, 2, 'com.example.test.ExcluirTest')
+data.setCell(25, 3, 36);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testDadosProdutoExibidos')
+data.setCell(26, 2, 'com.example.test.ListarTest')
+data.setCell(26, 3, 28);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testPrecoProdutoExibido')
+data.setCell(27, 2, 'com.example.test.ListarTest')
+data.setCell(27, 3, 28);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testTabelaProdutosVisivel')
+data.setCell(28, 2, 'com.example.test.ListarTest')
+data.setCell(28, 3, 27);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testBotaoExcluirVisivel')
+data.setCell(29, 2, 'com.example.test.ExcluirTest')
+data.setCell(29, 3, 8);
+window.suiteTableData['AutomacaoTestesSelelenium']= { tableData: data, tableDiv: 'times-div-AutomacaoTestesSelelenium'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
+              <div id="times-div-AutomacaoTestesSelelenium">
+              </div> <!-- times-div-AutomacaoTestesSelelenium -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AutomacaoTestesSelelenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AutomacaoTestesSelelenium</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AutomacaoTestesSelelenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AutomacaoTestesSelelenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.test.ListarTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCadastrarNovoNavegacao</span>
+                <span class="method-start">1171 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">2734 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDadosProdutoExibidos</span>
+                <span class="method-start">3473 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">3501 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3568 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testListaProdutosNaoVazia</span>
+                <span class="method-start">4247 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">4430 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4496 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMensagemSucessoNaoVisivel</span>
+                <span class="method-start">5115 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">15163 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15228 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPrecoProdutoExibido</span>
+                <span class="method-start">15883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">15911 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15976 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTabelaProdutosVisivel</span>
+                <span class="method-start">16640 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">16667 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.test.CadastroTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">17006 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCamposFormularioVisiveis</span>
+                <span class="method-start">17643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">17743 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">17859 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNavegacaoCadastro</span>
+                <span class="method-start">18814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">18878 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">18943 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegistroComPrecoNegativo</span>
+                <span class="method-start">19786 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">30912 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">30978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegistroProdutoParametrizado(Produto Válido 1, 10.50, true)</span>
+                <span class="method-start">31482 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">31850 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">31914 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegistroProdutoParametrizado(Produto Válido 2, 99.99, true)</span>
+                <span class="method-start">32514 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">32705 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">32770 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegistroProdutoParametrizado(Monitores, 1200.00, true)</span>
+                <span class="method-start">33355 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">33588 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">33653 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegistroProdutoParametrizado(, 10.50, false)</span>
+                <span class="method-start">34209 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">34371 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34436 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegistroProdutoParametrizado(Produto Inválido, -5.00, false)</span>
+                <span class="method-start">35007 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">35186 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">35251 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegistroProdutoParametrizado(Produto Inválido, abc, false)</span>
+                <span class="method-start">35867 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">36029 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">36095 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegistroProdutoSucesso</span>
+                <span class="method-start">36697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">36907 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">36972 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegistroSemNome</span>
+                <span class="method-start">37517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">37681 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.test.EditarTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">37852 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAtualizacaoComPrecoNegativo</span>
+                <span class="method-start">38502 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">48735 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">48799 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAtualizacaoProdutoSucesso</span>
+                <span class="method-start">49326 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">49878 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">49944 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAtualizacaoSemNome</span>
+                <span class="method-start">50555 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">50758 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">50823 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCancelarEdicao</span>
+                <span class="method-start">51314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">51399 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">51464 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEdicaoProdutoNaoExistente</span>
+                <span class="method-start">51937 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">51975 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">52040 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFormularioPreaPreenchido</span>
+                <span class="method-start">52649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">52703 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">52767 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNavegacaoEdicao</span>
+                <span class="method-start">53246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">53306 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.test.ExcluirTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">53540 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBotaoExcluirVisivel</span>
+                <span class="method-start">54119 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">54127 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">54192 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCancelarExclusao</span>
+                <span class="method-start">54844 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">55069 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">55133 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDialogoConfirmacaoExclusao</span>
+                <span class="method-start">55707 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">55766 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">55832 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testExclusaoMultiplosProdutos</span>
+                <span class="method-start">56440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">66604 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">66669 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testExclusaoProdutoNaoExistente</span>
+                <span class="method-start">67304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">67341 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">67405 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testExclusaoProdutoSucesso</span>
+                <span class="method-start">67957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">78160 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

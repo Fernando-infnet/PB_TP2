@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AutomacaoTestesSelelenium" verbose="2" parallel="false">
+    <test name="ListarTest">
+        <classes>
+            <class name="com.example.test.ListarTest"/>
+        </classes>
+    </test>
+
+    <test name="CadastroTest">
+        <classes>
+            <class name="com.example.test.CadastroTest"/>
+        </classes>
+    </test>
+
+    <test name="EditarTest">
+        <classes>
+            <class name="com.example.test.EditarTest"/>
+        </classes>
+    </test>
+
+    <test name="ExcluirTest">
+        <classes>
+            <class name="com.example.test.ExcluirTest"/>
+        </classes>
+    </test>
+</suite>

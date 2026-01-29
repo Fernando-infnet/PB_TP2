@@ -1,0 +1,9 @@
+com/example/test/CadastroTest.class
+com/example/test/ExcluirTest.class
+com/example/test/pages/CadastroPage.class
+com/example/AppTest.class
+com/example/test/EditarTest.class
+com/example/test/pages/ListarPage.class
+com/example/test/base/BaseTest.class
+com/example/test/ListarTest.class
+com/example/ProdutoControllerTest.class

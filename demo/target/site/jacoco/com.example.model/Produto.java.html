@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Produto.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">demo</a> &gt; <a href="index.source.html" class="el_package">com.example.model</a> &gt; <span class="el_source">Produto.java</span></div><h1>Produto.java</h1><pre class="source lang-java linenums">package com.example.model;
+
+/**
+ * Entidade Produto representando um produto no sistema.
+ * Contém informações essenciais sobre um produto incluindo identificador,
+ * nome e preço.
+ */
+public class Produto {
+
+    private Long id;
+    private String nome;
+    private Double preco;
+
+    // Construtores
+<span class="fc" id="L15">    public Produto() {</span>
+<span class="fc" id="L16">    }</span>
+
+<span class="fc" id="L18">    public Produto(String nome, Double preco) {</span>
+<span class="fc" id="L19">        this.nome = nome;</span>
+<span class="fc" id="L20">        this.preco = preco;</span>
+<span class="fc" id="L21">    }</span>
+
+<span class="fc" id="L23">    public Produto(Long id, String nome, Double preco) {</span>
+<span class="fc" id="L24">        this.id = id;</span>
+<span class="fc" id="L25">        this.nome = nome;</span>
+<span class="fc" id="L26">        this.preco = preco;</span>
+<span class="fc" id="L27">    }</span>
+
+    // Getters e Setters
+    public Long getId() {
+<span class="fc" id="L31">        return id;</span>
+    }
+
+    public void setId(Long id) {
+<span class="fc" id="L35">        this.id = id;</span>
+<span class="fc" id="L36">    }</span>
+
+    public String getNome() {
+<span class="fc" id="L39">        return nome;</span>
+    }
+
+    public void setNome(String nome) {
+<span class="fc" id="L43">        this.nome = nome;</span>
+<span class="fc" id="L44">    }</span>
+
+    public Double getPreco() {
+<span class="fc" id="L47">        return preco;</span>
+    }
+
+    public void setPreco(Double preco) {
+<span class="pc bpc" id="L51" title="1 of 2 branches missed.">        if (preco &lt; 0) {</span>
+<span class="nc" id="L52">            throw new IllegalArgumentException(&quot;Preço não pode ser negativo&quot;);</span>
+        }
+<span class="fc" id="L54">        this.preco = preco;</span>
+<span class="fc" id="L55">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L59">        return &quot;Produto{&quot; +</span>
+                &quot;id=&quot; + id +
+                &quot;, nome='&quot; + nome + '\'' +
+                &quot;, preco=&quot; + preco +
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

@@ -71,6 +71,22 @@ public class ListarPage {
     }
 
     /**
+     * Clica no botão editar do primeiro produto na tabela
+     */
+    public void clicarEditarPrimeiroProduto() {
+        By btnEditarPrimeiro = By.xpath("//table[@id='produtosTable']/tbody/tr[1]//button[contains(@id, 'btnEditar')]");
+        driver.findElement(btnEditarPrimeiro).click();
+    }
+
+    /**
+     * Clica no botão excluir do último produto na tabela
+     */
+    public void clicarExcluirUltimoProduto() {
+        By btnExcluirUltimo = By.xpath("//table[@id='produtosTable']/tbody/tr[last()]//button[contains(@id, 'btnExcluir')]");
+        driver.findElement(btnExcluirUltimo).click();
+    }
+
+    /**
      * Verifica se a mensagem de sucesso está visível
      */
     public boolean isMensagemSucessoVisivel() {

@@ -108,9 +108,16 @@
                     </div>
 
                     <!-- Alert for error messages -->
-                    <div th:if="${erro}" class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <i class="bi bi-exclamation-octagon-fill"></i> <strong>Erro!</strong> <span th:text="${erro}"></span>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <div th:if="${erro}" class="alert alert-danger alert-dismissible fade show" role="alert" id="alertErro">
+                        <div class="d-flex align-items-start">
+                            <i class="bi bi-exclamation-octagon-fill me-2 mt-1"></i>
+                            <div>
+                                <strong>Atenção!</strong>
+                                <p class="mb-0 mt-1" th:text="${erro}"></p>
+                                <small class="text-muted">Por favor, corrija os dados e tente novamente.</small>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
                     </div>
 
                     <!-- Product Form -->
@@ -121,6 +128,7 @@
                         <div class="mb-4">
                             <label for="nome" class="form-label">
                                 <i class="bi bi-box-seam"></i> Nome do Produto:
+                                <span class="text-danger">*</span>
                             </label>
                             <input type="text" 
                                    th:field="*{nome}" 
@@ -129,16 +137,19 @@
                                    required 
                                    placeholder="Ex: Arroz Tipo 1, Feijão Carioca, Macarrão..."
                                    minlength="1"
-                                   maxlength="100" />
+                                   maxlength="255"
+                                   title="Nome do produto com no máximo 255 caracteres" />
                             <div class="form-text">
-                                <i class="bi bi-info-circle"></i> Digite o nome completo do produto
+                                <i class="bi bi-info-circle"></i> Digite o nome completo do produto (obrigatório)
                             </div>
+                            <div class="invalid-feedback d-block" id="nomeError"></div>
                         </div>
 
                         <!-- Preço Field -->
                         <div class="mb-4">
                             <label for="preco" class="form-label">
                                 <i class="bi bi-currency-dollar"></i> Preço Unitário (R$):
+                                <span class="text-danger">*</span>
                             </label>
                             <div class="input-group input-group-lg">
                                 <span class="input-group-text">R$</span>
@@ -148,12 +159,14 @@
                                        class="form-control" 
                                        required 
                                        placeholder="0,00"
-                                       min="0"
-                                       step="0.01" />
+                                       min="0.01"
+                                       step="0.01"
+                                       title="Preço deve ser um valor positivo maior que zero" />
                             </div>
                             <div class="form-text">
-                                <i class="bi bi-info-circle"></i> Informe o valor de venda do produto
+                                <i class="bi bi-info-circle"></i> Informe o valor de venda do produto (obrigatório, maior que zero)
                             </div>
+                            <div class="invalid-feedback d-block" id="precoError"></div>
                         </div>
 
                         <!-- Action Buttons -->
@@ -182,14 +195,76 @@
     
     <!-- Form validation -->
     <script>
-        document.getElementById('formProduto').addEventListener('submit', function(event) {
-            var form = this;
-            if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('formProduto');
+            const nomeInput = document.getElementById('nome');
+            const precoInput = document.getElementById('preco');
+            const nomeError = document.getElementById('nomeError');
+            const precoError = document.getElementById('precoError');
+
+            // Validação em tempo real do Nome
+            nomeInput.addEventListener('blur', function() {
+                validarNome();
+            });
+
+            // Validação em tempo real do Preço
+            precoInput.addEventListener('blur', function() {
+                validarPreco();
+            });
+
+            function validarNome() {
+                const nome = nomeInput.value.trim();
+                nomeError.innerHTML = '';
+                
+                if (nome.length === 0) {
+                    nomeInput.classList.add('is-invalid');
+                    nomeError.innerHTML = '❌ Nome do produto é obrigatório.';
+                    return false;
+                }
+                
+                if (nome.length > 255) {
+                    nomeInput.classList.add('is-invalid');
+                    nomeError.innerHTML = '❌ Nome muito longo. Use no máximo 255 caracteres. (Atual: ' + nome.length + ')';
+                    return false;
+                }
+                
+                nomeInput.classList.remove('is-invalid');
+                nomeInput.classList.add('is-valid');
+                return true;
             }
-            form.classList.add('was-validated');
-        }, false);
+
+            function validarPreco() {
+                const preco = parseFloat(precoInput.value);
+                precoError.innerHTML = '';
+                
+                if (isNaN(preco) || precoInput.value.trim() === '') {
+                    precoInput.classList.add('is-invalid');
+                    precoError.innerHTML = '❌ Preço é obrigatório.';
+                    return false;
+                }
+                
+                if (preco <= 0) {
+                    precoInput.classList.add('is-invalid');
+                    precoError.innerHTML = '❌ Preço deve ser maior que zero.';
+                    return false;
+                }
+                
+                precoInput.classList.remove('is-invalid');
+                precoInput.classList.add('is-valid');
+                return true;
+            }
+
+            // Validação ao submeter o formulário
+            form.addEventListener('submit', function(event) {
+                const nomeValido = validarNome();
+                const precoValido = validarPreco();
+
+                if (!nomeValido || !precoValido) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+            });
+        });
     </script>
 </body>
 </html>

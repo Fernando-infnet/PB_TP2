@@ -44,15 +44,32 @@ public class ProdutoController {
 
     /**
      * Salva novo produto ou atualiza existente
+     * Implementa tratamento seguro de erros sem exposição de informações internas
      */
     @PostMapping("/salvar")
     public String salvar(@ModelAttribute Produto produto, RedirectAttributes redirectAttributes) {
         try {
+            // Validação básica antes de processar
+            if (produto == null) {
+                redirectAttributes.addFlashAttribute("erro", "Dados do produto inválidos. Por favor, preencha todos os campos.");
+                return "redirect:/produtos/cadastrar";
+            }
+
             produtoService.salvar(produto);
             redirectAttributes.addFlashAttribute("sucesso", "Produto salvo com sucesso!");
             return "redirect:/produtos/listar";
+            
         } catch (IllegalArgumentException e) {
-            redirectAttributes.addFlashAttribute("erro", e.getMessage());
+            // Exibe mensagem de validação amigável ao usuário
+            String mensagem = normalizarMensagemErro(e.getMessage());
+            redirectAttributes.addFlashAttribute("erro", mensagem);
+            redirectAttributes.addFlashAttribute("produto", produto);
+            return "redirect:/produtos/cadastrar";
+            
+        } catch (Exception e) {
+            // Erro inesperado - mensagem genérica para segurança
+            redirectAttributes.addFlashAttribute("erro", "Erro ao processar a solicitação. Por favor, tente novamente.");
+            redirectAttributes.addFlashAttribute("produto", produto);
             return "redirect:/produtos/cadastrar";
         }
     }
@@ -62,25 +79,87 @@ public class ProdutoController {
      */
     @GetMapping("/editar/{id}")
     public String editarForm(@PathVariable Long id, Model model, RedirectAttributes redirectAttributes) {
-        var produto = produtoService.buscarPorId(id);
-        if (produto.isPresent()) {
-            model.addAttribute("produto", produto.get());
-            return "form";
+        try {
+            if (id == null || id <= 0) {
+                redirectAttributes.addFlashAttribute("erro", "ID do produto inválido.");
+                return "redirect:/produtos/listar";
+            }
+
+            var produto = produtoService.buscarPorId(id);
+            if (produto.isPresent()) {
+                model.addAttribute("produto", produto.get());
+                return "form";
+            }
+            redirectAttributes.addFlashAttribute("erro", "Produto não encontrado. Ele pode ter sido removido.");
+            return "redirect:/produtos/listar";
+            
+        } catch (Exception e) {
+            redirectAttributes.addFlashAttribute("erro", "Erro ao carregar o produto. Tente novamente.");
+            return "redirect:/produtos/listar";
         }
-        redirectAttributes.addFlashAttribute("erro", "Produto não encontrado");
-        return "redirect:/produtos/listar";
     }
 
     /**
-     * Deleta um produto por ID
+     * Deleta um produto por ID com validação segura
      */
     @GetMapping("/excluir/{id}")
     public String excluir(@PathVariable Long id, RedirectAttributes redirectAttributes) {
-        if (produtoService.excluir(id)) {
-            redirectAttributes.addFlashAttribute("sucesso", "Produto deletado com sucesso!");
-        } else {
-            redirectAttributes.addFlashAttribute("erro", "Produto não encontrado");
+        try {
+            if (id == null || id <= 0) {
+                redirectAttributes.addFlashAttribute("erro", "ID do produto inválido.");
+                return "redirect:/produtos/listar";
+            }
+
+            if (produtoService.excluir(id)) {
+                redirectAttributes.addFlashAttribute("sucesso", "Produto removido do estoque com sucesso!");
+            } else {
+                redirectAttributes.addFlashAttribute("erro", "Produto não encontrado. Ele pode ter sido removido anteriormente.");
+            }
+            return "redirect:/produtos/listar";
+            
+        } catch (Exception e) {
+            redirectAttributes.addFlashAttribute("erro", "Erro ao remover o produto. Tente novamente.");
+            return "redirect:/produtos/listar";
         }
-        return "redirect:/produtos/listar";
+    }
+
+    /**
+     * Normaliza mensagem de erro para ser amigável ao usuário
+     * Remove detalhes técnicos e expõe apenas informações relevantes
+     */
+    private String normalizarMensagemErro(String mensagemOriginal) {
+        if (mensagemOriginal == null || mensagemOriginal.trim().isEmpty()) {
+            return "Dados inválidos. Por favor, verifique e tente novamente.";
+        }
+
+        // Mapeamento de mensagens técnicas para mensagens amigáveis
+        String mensagem = mensagemOriginal.toLowerCase();
+
+        if (mensagem.contains("nome") && (mensagem.contains("vazio") || mensagem.contains("espaço"))) {
+            return "Nome do produto é obrigatório. Por favor, insira um nome válido.";
+        }
+
+        if (mensagem.contains("preço") && mensagem.contains("negativo")) {
+            return "Preço deve ser um valor positivo. Por favor, insira um preço maior que zero.";
+        }
+
+        if (mensagem.contains("preço") && mensagem.contains("zero")) {
+            return "Preço deve ser maior que zero.";
+        }
+
+        if (mensagem.contains("preço") && (mensagem.contains("null") || mensagem.contains("nulo"))) {
+            return "Preço é obrigatório. Por favor, insira um valor.";
+        }
+
+        if (mensagem.contains("nome") && (mensagem.contains("null") || mensagem.contains("nulo"))) {
+            return "Nome do produto é obrigatório.";
+        }
+
+        if (mensagem.contains("tamanho") || mensagem.contains("exceder") || mensagem.contains("limite")) {
+            return "Nome do produto muito longo. Use no máximo 255 caracteres.";
+        }
+
+        // Fallback seguro para erros desconhecidos
+        return "Dados inválidos. Por favor, verifique e tente novamente.";
     }
 }

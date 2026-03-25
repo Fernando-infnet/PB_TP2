@@ -1,0 +1,50 @@
+name: Self-hosted Runner Smoke Test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main", "master"]
+
+jobs:
+  local-runner-check:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Runner diagnostics
+        run: |
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner arch: $RUNNER_ARCH"
+          echo "Workspace: $GITHUB_WORKSPACE"
+          uname -a
+
+      - name: Java version
+        run: java -version
+
+      - name: Install extra software (jq)
+        shell: bash
+        run: |
+          set -e
+          if command -v apt-get >/dev/null 2>&1; then
+            SUDO=""
+            if command -v sudo >/dev/null 2>&1; then SUDO="sudo"; fi
+            $SUDO apt-get update
+            $SUDO apt-get install -y jq
+          elif command -v pacman >/dev/null 2>&1; then
+            SUDO=""
+            if command -v sudo >/dev/null 2>&1; then SUDO="sudo"; fi
+            $SUDO pacman -Sy --noconfirm jq
+          elif command -v brew >/dev/null 2>&1; then
+            brew install jq
+          elif command -v choco >/dev/null 2>&1; then
+            choco install jq -y
+          else
+            echo "Nenhum gerenciador suportado encontrado (apt, pacman, brew, choco)."
+            exit 1
+          fi
+
+      - name: Validate jq installation
+        run: jq --version

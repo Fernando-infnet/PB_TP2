@@ -175,7 +175,7 @@ if (nome == null || nome.trim().isEmpty()) {
 
 ### 2. Build do Projeto
 ```bash
-cd /home/intra/Documents/Trabalhos/Engenharia\ de\ Testes\ de\ Software/PB/demo
+cd ~/demo
 mvn clean install
 ```
 
